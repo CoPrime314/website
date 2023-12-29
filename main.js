@@ -17,6 +17,14 @@ const renderer = new THREE.WebGL1Renderer({
   canvas: document.querySelector('#background'),
 });
 
+// for windows specific
+//**
+var ismobile = 1;
+if (typeof window.orientation == 'undefined'){
+ismobile = 0;
+}else{
+  window.location="/website/main.html";
+}
 //renderer size &loc
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth,window.innerHeight);
