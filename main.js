@@ -35,10 +35,10 @@ composer.addPass(new UnrealBloomPass({x:1024, y:1024}, 0.5, 0.0, 0.35))
 //objects
 let doorModel;
 const gltfloader = new GLTFLoader();
-gltfloader.load('./public/cabin/cabin.gltf', (gltfScene)=>{
+gltfloader.load('/website/cabin/cabin.gltf', (gltfScene)=>{
 scene.add(gltfScene.scene)
 })
-gltfloader.load('./public/cabindoor/cabindoor.gltf', (gltfScene2)=>{
+gltfloader.load('/website/cabindoor/cabindoor.gltf', (gltfScene2)=>{
   doorModel = gltfScene2;
   //init door position
   gltfScene2.scene.position.x =-3.4; //frontback
@@ -77,7 +77,7 @@ const snowMat = new THREE.PointsMaterial({
   sizes: 0.2,
   transparent: true
 });
-var snowAlpha = new THREE.TextureLoader().load('./public/snowAlpha.png');
+var snowAlpha = new THREE.TextureLoader().load('/website/snowAlpha.png');
 snowMat.alphaMap=snowAlpha;
 snow = new THREE.Points(snowGeo,snowMat);
 scene.add(snow);
