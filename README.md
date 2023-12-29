@@ -1,3 +1,5 @@
 # Hello!!
 
-This is my personal website. The link to this is http://coperimescabin.com
+If anyone is reading this, the link to the original website is http://coperimescabin.com 
+but I wasn't able to configure the domain name correctly so here we are.
+Consider this a fun easter egg if you found it!
