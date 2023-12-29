@@ -171,7 +171,7 @@ var moveDoor =(function() {
     .to(targetR , 3800) // 1000 ms = 1 sec
     .easing(TWEEN.Easing.Quintic.Out) //easing
     .onComplete(()=>{
-      window.location="main.html";
+      window.location="/website/main.html";
     })
     .start();
     executed = true;
