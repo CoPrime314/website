@@ -40,13 +40,32 @@ composer.addPass(new RenderPass(scene, camera))
 composer.addPass(new UnrealBloomPass({x:1024, y:1024}, 0.5, 0.0, 0.35))
 
 
-//objects
+
+//cabin load 
 let doorModel;
-const gltfloader = new GLTFLoader();
-gltfloader.load('/website/cabin/cabin.gltf', (gltfScene)=>{
-scene.add(gltfScene.scene)
-})
-gltfloader.load('/website/cabindoor/cabindoor.gltf', (gltfScene2)=>{
+var loader = new GLTFLoader();
+var modelPath = '/website/cabin/cabin.gltf';
+
+loader.load(
+    modelPath,
+    function (gltf) {
+        var object = gltf.scene;
+        scene.add(object);
+        onModelALoaded();
+    }
+);
+function onModelALoaded() {
+  //loading script
+  $(".loader-wrapper").fadeOut("slow");
+  //turn back on instructions and cursor
+  document.getElementById('blocker').style.display = 'flex';
+  document.getElementById('instructions').style.display = 'flex';
+  console.log('cabin loaded');
+}
+
+
+
+loader.load('/website/cabindoor/cabindoor.gltf', (gltfScene2)=>{
   doorModel = gltfScene2;
   //init door position
   gltfScene2.scene.position.x =-3.4; //frontback

@@ -64,15 +64,6 @@
       <div class="loader-wrapper" id="loadingOverlay">
         <img src = "/website/images/icons/loading.gif" alt="Loading">
       </div>
-      <!-- Loading script-->
-      <script>   
-          $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-            //turn back on instructions and cursor
-            document.getElementById('blocker').style.display = 'flex';
-            document.getElementById('instructions').style.display = 'flex';
-          }); 
-      </script>
 
       <script type="module" src="/main.js"></script>
     </body>
