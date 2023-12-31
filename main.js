@@ -23,7 +23,7 @@ var ismobile = 1;
 if (typeof window.orientation == 'undefined'){
 ismobile = 0;
 }else{
-  window.location="/website/main.html";
+  window.location="/main.html";
 }
 //renderer size &loc
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -44,7 +44,7 @@ composer.addPass(new UnrealBloomPass({x:1024, y:1024}, 0.5, 0.0, 0.35))
 //cabin load 
 let doorModel;
 var loader = new GLTFLoader();
-var modelPath = '/website/cabin/cabin.gltf';
+var modelPath = '/cabin/cabin.gltf';
 
 loader.load(
     modelPath,
@@ -65,7 +65,7 @@ function onModelALoaded() {
 
 
 
-loader.load('/website/cabindoor/cabindoor.gltf', (gltfScene2)=>{
+loader.load('/cabindoor/cabindoor.gltf', (gltfScene2)=>{
   doorModel = gltfScene2;
   //init door position
   gltfScene2.scene.position.x =-3.4; //frontback
@@ -104,7 +104,7 @@ const snowMat = new THREE.PointsMaterial({
   sizes: 0.2,
   transparent: true
 });
-var snowAlpha = new THREE.TextureLoader().load('/website/snowAlpha.png');
+var snowAlpha = new THREE.TextureLoader().load('/snowAlpha.png');
 snowMat.alphaMap=snowAlpha;
 snow = new THREE.Points(snowGeo,snowMat);
 scene.add(snow);
@@ -198,7 +198,7 @@ var moveDoor =(function() {
     .to(targetR , 3800) // 1000 ms = 1 sec
     .easing(TWEEN.Easing.Quintic.Out) //easing
     .onComplete(()=>{
-      window.location="/website/main.html";
+      window.location="/main.html";
     })
     .start();
     executed = true;
