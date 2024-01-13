@@ -4,7 +4,7 @@ import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 
 // Set up scene, camera, and renderer
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerWidth, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 // Set camera position
 camera.position.z = 13;
@@ -15,9 +15,7 @@ var renderer = new THREE.WebGLRenderer({antialias:true,});
 
 // Set renderer size to match the div
 var container = document.getElementById('threescene');
-var width = container.clientWidth;
-var height = container.clientWidth;
-renderer.setSize(width, height);
+renderer.setSize(window.innerWidth, window.innerHeight );
 
 // Append renderer to the div
 container.appendChild(renderer.domElement);
