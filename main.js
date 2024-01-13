@@ -14,7 +14,7 @@ import { UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPas
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(40, window.innerWidth/window.innerHeight,0.1,1000);
 const renderer = new THREE.WebGL1Renderer({
-  canvas: document.querySelector('#background'),
+  canvas: document.querySelector('#background'),antialias:true,
 });
 
 // for windows specific
@@ -23,7 +23,7 @@ var ismobile = 1;
 if (typeof window.orientation == 'undefined'){
 ismobile = 0;
 }else{
-  window.location="/main.html";
+  window.location="/inside/main.html";
 }
 //renderer size &loc
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -198,7 +198,7 @@ var moveDoor =(function() {
     .to(targetR , 3800) // 1000 ms = 1 sec
     .easing(TWEEN.Easing.Quintic.Out) //easing
     .onComplete(()=>{
-      window.location="/main.html";
+      window.location="/inside/main.html";
     })
     .start();
     executed = true;
