@@ -18,17 +18,30 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#three_container {
+  position:relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
 #carouself {
   position:absolute;
   width: 100vw;
   height: 100vh;
   pointer-events: none; 
 }
+#drag {
+  position:relative;
+  top:100px;
+  left: 43vw;
+  width: 130px;
+  height: 80px;
+  border-radius: 20px;
+  pointer-events: none; 
+}
 #threescene {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
+  position:absolute;
 }
     
 /* Flex box nonsense */
@@ -75,6 +88,7 @@ body {
 
 
 
+
 .block_asset{
   width:100vw;
 }
@@ -86,7 +100,7 @@ section{
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 85vh;
+  min-height: 60vh;
 
   font-weight: normal;
   font-size: 30px;
