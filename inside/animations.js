@@ -3,8 +3,9 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 
 // Set up scene, camera, and renderer
+const global_height = window.innerHeight*0.85;
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(10, window.innerWidth / global_height, 0.1, 1000);
 
 // Set camera position
 camera.position.z = 13;
@@ -15,7 +16,7 @@ var renderer = new THREE.WebGLRenderer({antialias:true,});
 
 // Set renderer size to match the div
 var container = document.getElementById('threescene');
-renderer.setSize(window.innerWidth, window.innerHeight );
+renderer.setSize(window.innerWidth, global_height );
 
 // Append renderer to the div
 container.appendChild(renderer.domElement);
@@ -53,10 +54,10 @@ scene.add(amlight);
 //resize
 window.addEventListener( 'resize', onWindowResize );
 function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = window.innerWidth / global_height;
   camera.updateProjectionMatrix();
 
-  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setSize( window.innerWidth, global_height );
 
 }
 

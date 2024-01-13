@@ -21,14 +21,14 @@ body {
 #three_container {
   position:relative;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   top: 0;
   left: 0;
 }
 #carouself {
   position:absolute;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   pointer-events: none; 
 }
 #drag {
