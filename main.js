@@ -43,17 +43,31 @@ composer.addPass(new UnrealBloomPass({x:1024, y:1024}, 0.5, 0.0, 0.35))
 
 //cabin load 
 let doorModel;
+let loader_no = 0;
 var loader = new GLTFLoader();
-var modelPath = '/cabin/cabin.gltf';
 
-loader.load(
-    modelPath,
-    function (gltf) {
-        var object = gltf.scene;
-        scene.add(object);
-        onModelALoaded();
+loader.load('/cabin/cabin.gltf', function (gltf) {
+        scene.add(gltf.scene);
+        loader_no+=1;
+        if (loader_no>=2){
+          onModelALoaded();
+        }
     }
 );
+
+loader.load('/cabindoor/cabindoor.gltf', (gltfScene2)=>{
+  doorModel = gltfScene2;
+  //init door position
+  gltfScene2.scene.position.x =-3.4; //frontback
+  gltfScene2.scene.position.y =1.7; //updown
+  gltfScene2.scene.position.z =0.2; //leftright
+  scene.add(gltfScene2.scene);
+  loader_no+=1;
+  if (loader_no>=2){
+    onModelALoaded();
+  }
+})
+
 function onModelALoaded() {
   //loading script
   $(".loader-wrapper").fadeOut("slow");
@@ -62,17 +76,6 @@ function onModelALoaded() {
   document.getElementById('instructions').style.display = 'flex';
   console.log('cabin loaded');
 }
-
-
-
-loader.load('/cabindoor/cabindoor.gltf', (gltfScene2)=>{
-  doorModel = gltfScene2;
-  //init door position
-  gltfScene2.scene.position.x =-3.4; //frontback
-  gltfScene2.scene.position.y =1.7; //updown
-  gltfScene2.scene.position.z =0.2; //leftright
-  scene.add(gltfScene2.scene)
-})
 
 
 //snow
@@ -127,9 +130,11 @@ scene.add(ambientLight)
 //const controls = new OrbitControls(camera, renderer.domElement);
 const controls = new PointerLockControls(camera, renderer.domElement);
 controls.pointerSpeed=0.4;
-
+controls.maxPolarAngle=Math.PI/2+0.15;
+controls.minPolarAngle=Math.PI/2-0.15;
 
 //lockcam and display
+
 document.addEventListener('click', function(){
   controls.lock();
 });

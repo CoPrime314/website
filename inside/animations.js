@@ -27,6 +27,7 @@ const controls = new OrbitControls( camera, renderer.domElement );
 
 controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
 controls.dampingFactor = 0.05;
+controls.enableZoom = false;
 controls.screenSpacePanning = false;
 controls.maxPolarAngle = Math.PI / 2;
 controls.minPolarAngle = Math.PI / 2;
@@ -36,12 +37,20 @@ var loader = new GLTFLoader();
 let carousel;
 loader.load('/carousel/carousel.gltf', (gltfScene)=>{
   carousel = gltfScene.scene;
-  carousel.normal
+  carousel.normal;
   //init door position
-  scene.add(gltfScene.scene)
+  scene.add(gltfScene.scene);
+  onModelALoaded();
   animate();
 
 })
+function onModelALoaded() {
+  //loading script
+  $(".loader-wrapper").fadeOut("slow");
+  //turn back on instructions and cursor
+  console.log('carousel loaded');
+}
+
 
 
 //add light

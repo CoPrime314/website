@@ -60,13 +60,9 @@
       <iframe src="https://www.youtube.com/embed/e2SaSkeeWF4"></iframe>
 
     <!-- Loading screen-->
-    <div class="loader-wrapper">
+    <div class="loader-wrapper" id="loadingOverlay">
+      <img src = "/loading.gif" alt="Loading">
     </div>
-    <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
 
     <script type="module" src="animations.js"></script>
   </body>
