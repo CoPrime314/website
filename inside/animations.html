@@ -9,10 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" href="/assets/icon-062d947d.ico"/>
     
-      <script type="module" crossorigin src="/assets/animations-cbd8a38e.js"></script>
+      <script type="module" crossorigin src="/assets/animations-d27bcd9c.js"></script>
       <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
       <link rel="modulepreload" crossorigin href="/assets/GLTFLoader-36134f7d.js">
-      <link rel="stylesheet" href="/assets/styleanim-98abcacf.css">
+      <link rel="stylesheet" href="/assets/styleanim-eb8ba408.css">
     </head>
     <body>
       <!--cursor-->
@@ -64,13 +64,9 @@
       <iframe src="https://www.youtube.com/embed/e2SaSkeeWF4"></iframe>
 
     <!-- Loading screen-->
-    <div class="loader-wrapper">
+    <div class="loader-wrapper" id="loadingOverlay">
+      <img src = "/loading.gif" alt="Loading">
     </div>
-    <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
 
     
   </body>
