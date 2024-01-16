@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 
 // Set up scene, camera, and renderer
-const global_height = window.innerHeight*0.85;
+let global_height = window.innerHeight*0.85;
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(10, window.innerWidth / global_height, 0.1, 1000);
 
@@ -47,6 +47,8 @@ loader.load('/carousel/carousel.gltf', (gltfScene)=>{
 function onModelALoaded() {
   //loading script
   $(".loader-wrapper").fadeOut("slow");
+  //readd scroll
+  document.body.style.overflow = 'visible';
   //turn back on instructions and cursor
   console.log('carousel loaded');
 }
@@ -63,6 +65,7 @@ scene.add(amlight);
 //resize
 window.addEventListener( 'resize', onWindowResize );
 function onWindowResize() {
+  global_height = window.innerHeight*0.85;
   camera.aspect = window.innerWidth / global_height;
   camera.updateProjectionMatrix();
 
