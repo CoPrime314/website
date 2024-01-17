@@ -18,6 +18,7 @@ if (typeof window.orientation == 'undefined'){
   bodymouse.addEventListener('mousemove', handleMouseMove);
 }else{
   document.body.classList.add('bodyphone');
+  document.querySelector('.section').style.fontSize = '25px';
 }
   
 

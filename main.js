@@ -225,9 +225,9 @@ function animate(){
     snow.position.x = 0;
   }
   //subtle cam shake
-  camera.rotation.x+=(Math.random()*2-1)/700;
-  camera.rotation.y+=(Math.random()*2-1)/600;
-  camera.rotation.z+=(Math.random()*2-1)/700;
+  camera.rotation.x+=(Math.random()*2-1)/1000;
+  camera.rotation.y+=(Math.random()*2-1)/800;
+  camera.rotation.z+=(Math.random()*2-1)/1000;
   
   requestAnimationFrame(animate);
   controls.update;
