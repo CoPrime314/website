@@ -77,10 +77,10 @@ function onModelALoaded() {
 // get screen
 
 const textureLoader = new THREE.TextureLoader();
-    const textureA = textureLoader.load('images/A.png', () => {
+    const textureA = textureLoader.load('/images/A.png', () => {
       animate();
     });
-    const textureB = textureLoader.load('images/B.png', () => {
+    const textureB = textureLoader.load('/images/B.png', () => {
       animate();
     });
 // screen shader
@@ -141,8 +141,8 @@ function onWindowResize() {
 function animate() {
     requestAnimationFrame(animate);
     //screen flashing
-    materialA.uniforms.brightness.value = 0.3+(Math.random()/3);
-    materialB.uniforms.brightness.value = 0.3+(Math.random()/3);
+    materialA.uniforms.brightness.value = 0.5+(Math.random()/3);
+    materialB.uniforms.brightness.value = 0.5+(Math.random()/3);
     //carousel rotate
     //carousel.rotation.y -= 0.001;
 
