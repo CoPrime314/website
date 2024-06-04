@@ -31,7 +31,28 @@ controls.enableZoom = false;
 controls.screenSpacePanning = false;
 controls.maxPolarAngle = Math.PI / 2;
 controls.minPolarAngle = Math.PI / 2;
+//SHADER WORK
+// Vertex shader
+const vertexShader = `
+      attribute float size; 
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `;
 
+// Fragment shader
+const fragmentShader = `
+      uniform sampler2D texture1;
+      uniform float brightness;
+      varying vec2 vUv;
+      void main() {
+        vec4 color = texture(texture1, vUv);
+        gl_FragColor = vec4(color.rgb * brightness, color.a);
+      }
+    `;
+//OBJECTS
 //carousel load 
 var loader = new GLTFLoader();
 let carousel;
@@ -53,13 +74,57 @@ function onModelALoaded() {
   console.log('carousel loaded');
 }
 
+// get screen
+
+const textureLoader = new THREE.TextureLoader();
+    const textureA = textureLoader.load('images/A.png', () => {
+      animate();
+    });
+    const textureB = textureLoader.load('images/B.png', () => {
+      animate();
+    });
+// screen shader
+const materialA = new THREE.ShaderMaterial({
+  uniforms: {
+    texture1: { value: textureA },
+    brightness: { value: 1.0 }
+  },
+  vertexShader: vertexShader,
+  fragmentShader: fragmentShader
+});
+const materialB = new THREE.ShaderMaterial({
+  uniforms: {
+    texture1: { value: textureB },
+    brightness: { value: 1.0 }
+  },
+  vertexShader: vertexShader,
+  fragmentShader: fragmentShader
+});
+//screens
+const geometry = new THREE.BoxGeometry(0.95,0.55,0.01);
+const screenA = new THREE.Mesh(geometry, materialA);
+const screenB = new THREE.Mesh(geometry, materialB);
+screenA.position.x =0.075; //leftright
+screenA.position.y =0.3; //updown
+screenA.position.z =0.70; //frontback
+screenA.rotation.x =-0.1; 
+screenA.rotation.y =-0.3; //zvert
+screenA.rotation.z =0.1; //front
+scene.add(screenA);
+screenB.position.x =0.87; //leftright
+screenB.position.y =0.35; //updown
+screenB.position.z =-0.28; //frontback
+screenB.rotation.x =-0.15; 
+screenB.rotation.y =-96; //zvert
+screenB.rotation.z =-0.1; //front
+scene.add(screenB);
 
 
 //add light
 
 
 const amlight = new THREE.AmbientLight();
-amlight.intensity=1;
+amlight.intensity=1.1;
 scene.add(amlight);
 
 //resize
@@ -75,6 +140,9 @@ function onWindowResize() {
 
 function animate() {
     requestAnimationFrame(animate);
+    //screen flashing
+    materialA.uniforms.brightness.value = 0.3+(Math.random()/3);
+    materialB.uniforms.brightness.value = 0.3+(Math.random()/3);
     //carousel rotate
     //carousel.rotation.y -= 0.001;
 
