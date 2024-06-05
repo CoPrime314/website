@@ -186,8 +186,8 @@ function moveCam() {
     })
     .start();
 }
-
-document.body.onclick = moveCam
+//background click to movecam
+document.getElementById('background').onclick = moveCam;
 
 //movedoor
 //can only be executed once

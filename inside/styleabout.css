@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 body {
     margin: 0;
     background-image: url('images/about.gif');
@@ -123,9 +123,9 @@ body {
       min-height: 85vh;
     
       font-weight: normal;
-      font-size: 30px;
+      font-size: 50px;
       font-style: normal;
-      font-family:'Courier New', Courier, monospace;
+      font-family: 'Reenie Beanie', cursive;
       color: aliceblue;
     }
     iframe {
