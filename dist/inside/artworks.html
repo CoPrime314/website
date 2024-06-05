@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coperime's Artworks</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coperime Guy is an animator and programmer. Welcome to Coperime's cabin. Enter at your discretion!">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" href="/assets/icon-062d947d.ico"/>
+    
+      <script type="module" crossorigin src="/assets/illustrations-4cff4c65.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
+      <link rel="modulepreload" crossorigin href="/assets/GLTFLoader-8902865b.js">
+      <link rel="stylesheet" href="/assets/artworks-7244fda6.css">
+    </head>
+    <body id="body">
+      <!--cursor-->
+      <div class="cursor" id="curs">
+        <script>
+          const cursor = document.querySelector('.cursor');
+          document.addEventListener('mousemove',e => {
+            cursor.setAttribute("style","top: " + (e.pageY-40)+"px; left: "+(e.pageX-45)+"px;")
+          })
+        </script>
+      </div> 
+      <!-- Spoopy audio -->
+      <audio id="snowstorm">
+        <source src="/assets/snowstorm-95dd274a.ogg" type="audio/ogg">
+        <source src="/assets/snowstorm-66f283ef.mp3" type="audio/mp3">
+        Your browser does not support this audio.
+      </audio>
+      <!-- Main containers for sections of the site-->
+      <div class="main_container">
+        <div class = "box container1">
+          <a href="main.html" class="link1">
+            <div class="button1"></div>
+          </a>
+        </div>
+        <div class = "box container2"> 
+            <img class="button2" src="/assets/scroll-cdbd28af.gif" alt="">
+        </div>
+      </div>
+
+      <!-- Some text right here -->
+      <section>
+        <p>Here are some of my unassorted artworks</p> 
+      </section>
+      <img class="block_asset" style="display: block;margin: 0;padding: 0;" src="/assets/block-asset1-3c3328a8.png" alt="">   
+
+      <!-- ITEMS -->
+          <div id="items">
+            <div id="three_container">
+              <div id="threescene">
+                <p id="overlay_text">Origami Pika</p>
+              </div>
+              <img id="crease" src="/assets/pika-35577e95.png">
+            </div> 
+            <div id="three_container">
+              <div id="threescene2"></div>
+               <!--<img id="crease" src="images/pika.png">-->
+            </div> 
+          </div>
+    <!-- Loading screen-->
+    <div class="loader-wrapper">
+      <img src = "/loading.gif" alt="Loading">
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+    
+  </body>
+ 
+</html>   

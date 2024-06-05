@@ -10,7 +10,7 @@ export default defineConfig({
                 about: resolve(__dirname, 'inside/about.html'),
                 animations: resolve(__dirname, 'inside/animations.html'),
                 coding: resolve(__dirname, 'inside/coding.html'),
-                illustrations: resolve(__dirname, 'inside/illustrations.html'),
+                illustrations: resolve(__dirname, 'inside/artworks.html'),
                 
             },
         },
