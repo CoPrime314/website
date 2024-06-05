@@ -79,7 +79,7 @@ function animate() {
     requestAnimationFrame(animate);
     // Render the scene
     renderer.render(scene, camera);
-    renderer2.render(scene, camera); //dupe
+    //renderer2.render(scene, camera); //dupe
     
 };
 
