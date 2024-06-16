@@ -33,6 +33,17 @@ body {
   height: 50vw;
   justify-items: end;
 }
+#blank_overlay {
+  position: absolute;
+  font-weight: normal;
+  margin-top: 24%;
+  margin-left: 10%;
+  font-size: 30px;
+  font-style: normal;
+  font-family: 'Reenie Beanie', cursive;
+  color: black;
+  white-space: pre-wrap;
+}
 #overlay_text{
   margin-top: 0%;
   position: absolute;
@@ -41,8 +52,8 @@ body {
   font-style: normal;
   font-family: 'Reenie Beanie', cursive;
   color: aliceblue;
+  white-space: pre-wrap;
 }
-    
 /* Flex box nonsense */
 .main_container {
   display: flex;
