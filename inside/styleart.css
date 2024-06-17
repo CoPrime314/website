@@ -21,6 +21,7 @@ body {
 }
 #items {
   display : inline-flex;
+  margin: 0%;
 }
 #three_container {
   width: 50vw;
@@ -41,7 +42,7 @@ body {
   font-size: 30px;
   font-style: normal;
   font-family: 'Reenie Beanie', cursive;
-  color: black;
+  color: rgb(255, 255, 255);
   white-space: pre-wrap;
 }
 #overlay_text{

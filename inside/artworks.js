@@ -118,7 +118,7 @@ function moveCam(){
 
   const t = document.body.getBoundingClientRect().top;
   pika.rotation.y=t*0.001;
-  rykard.rotation.y=t*0.001+1.5;
+  rykard.rotation.y=t*0.001+1.8;
   sunfish.rotation.y=t*0.001+0.5;
   
 }
