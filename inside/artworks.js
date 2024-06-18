@@ -19,9 +19,9 @@ camera2.position.z = 0.7;
 camera2.position.x = 0.01;
 camera2.position.y = 0.22; //updown
 camera2.rotation.x = -0.21;
-camera3.position.z = 0.8;
+camera3.position.z = 0.9;
 camera3.position.x = 0.01;
-camera3.position.y = 0.31; //updown
+camera3.position.y = 0.34; //updown
 camera3.rotation.x = -0.25;
 
 
@@ -50,7 +50,6 @@ let pika;
 loader.load('/pika/pika.gltf', (gltfScene)=>{
   pika = gltfScene.scene;
   scene.add(gltfScene.scene);
-  onModelALoaded();
   animate();
 
 })
@@ -58,7 +57,6 @@ let rykard;
 loader.load('/rykard/rykard.gltf', (gltfScene)=>{
   rykard = gltfScene.scene;
   scene2.add(gltfScene.scene);
-  onModelALoaded();
   animate();
 
 })
@@ -119,7 +117,7 @@ function moveCam(){
   const t = document.body.getBoundingClientRect().top;
   pika.rotation.y=t*0.001;
   rykard.rotation.y=t*0.001+1.8;
-  sunfish.rotation.y=t*0.001+0.5;
+  sunfish.rotation.y=t*0.001+0.3;
   
 }
 document.body.onscroll = moveCam

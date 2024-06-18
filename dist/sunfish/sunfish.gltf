@@ -15,23 +15,28 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Mesh_0",
+			"name":"Mesh_0.001",
 			"rotation":[
-				0,
-				0,
-				-0.3616763949394226,
-				0.9323037266731262
+				0.12519319355487823,
+				0.09449662268161774,
+				-0.1974111646413803,
+				0.9676910042762756
+			],
+			"scale":[
+				1.184530258178711,
+				1.184530258178711,
+				1.184530258178711
 			],
 			"translation":[
-				-0.11173419654369354,
-				-0.018959417939186096,
-				0
+				-0.10349094867706299,
+				-0.1671842634677887,
+				-0.04685373604297638
 			]
 		}
 	],
 	"materials":[
 		{
-			"name":"Material_0.004",
+			"name":"Material_0",
 			"normalTexture":{
 				"index":0
 			},
@@ -48,7 +53,7 @@
 	],
 	"meshes":[
 		{
-			"name":"Mesh_0",
+			"name":"Mesh_0.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -79,79 +84,79 @@
 	"images":[
 		{
 			"mimeType":"image/jpeg",
-			"name":"Image_0.004",
-			"uri":"textures/Image_0_004.jpg"
+			"name":"Image_0",
+			"uri":"textures/Image_0.jpg"
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Image_1.004",
-			"uri":"textures/Image_1_004.jpg"
+			"name":"Image_1",
+			"uri":"textures/Image_1.jpg"
 		},
 		{
 			"mimeType":"image/jpeg",
-			"name":"Image_2.004",
-			"uri":"textures/Image_2_004.jpg"
+			"name":"Image_2",
+			"uri":"textures/Image_2.jpg"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":34720,
+			"count":23892,
 			"max":[
-				0.07614200562238693,
-				0.24888087809085846,
-				0.032659005373716354
+				0.05850180238485336,
+				0.33099475502967834,
+				0.04976915568113327
 			],
 			"min":[
-				-0.07718850672245026,
-				0.04656244069337845,
-				-0.03246982768177986
+				-0.06550733000040054,
+				0.15420617163181305,
+				-0.05957001447677612
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":34720,
+			"count":23892,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":34720,
+			"count":23892,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":34722,
+			"count":23898,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":416640,
+			"byteLength":286704,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":416640,
-			"byteOffset":416640,
+			"byteLength":286704,
+			"byteOffset":286704,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":277760,
-			"byteOffset":833280,
+			"byteLength":191136,
+			"byteOffset":573408,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":69444,
-			"byteOffset":1111040,
+			"byteLength":47796,
+			"byteOffset":764544,
 			"target":34963
 		}
 	],
@@ -163,7 +168,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1180484,
+			"byteLength":812340,
 			"uri":"sunfish.bin"
 		}
 	]
