@@ -191,6 +191,36 @@
 	"images":[
 		{
 			"mimeType":"image/jpeg",
+			"name":"Image_0.001",
+			"uri":"textures/Image_0_001.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_1.001",
+			"uri":"textures/Image_1_001.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_2.001",
+			"uri":"textures/Image_2_001.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_0.003",
+			"uri":"textures/Image_0_003.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_1.003",
+			"uri":"textures/Image_1_003.jpg"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"Image_2.003",
+			"uri":"textures/Image_2_003.png"
+		},
+		{
+			"mimeType":"image/jpeg",
 			"name":"Image_0",
 			"uri":"textures/Image_0.jpg"
 		},
@@ -200,39 +230,9 @@
 			"uri":"textures/Image_1.jpg"
 		},
 		{
-			"mimeType":"image/jpeg",
-			"name":"Image_2",
-			"uri":"textures/Image_2.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_0",
-			"uri":"textures/Image_0-1.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_1",
-			"uri":"textures/Image_1-1.jpg"
-		},
-		{
 			"mimeType":"image/png",
 			"name":"Image_2",
 			"uri":"textures/Image_2.png"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_0",
-			"uri":"textures/Image_0-2.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_1",
-			"uri":"textures/Image_1-2.jpg"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Image_2",
-			"uri":"textures/Image_2-1.png"
 		}
 	],
 	"accessors":[
