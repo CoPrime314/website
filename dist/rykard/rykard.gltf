@@ -191,36 +191,6 @@
 	"images":[
 		{
 			"mimeType":"image/jpeg",
-			"name":"Image_0.001",
-			"uri":"textures/Image_0_001.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_1.001",
-			"uri":"textures/Image_1_001.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_2.001",
-			"uri":"textures/Image_2_001.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_0.003",
-			"uri":"textures/Image_0_003.jpg"
-		},
-		{
-			"mimeType":"image/jpeg",
-			"name":"Image_1.003",
-			"uri":"textures/Image_1_003.jpg"
-		},
-		{
-			"mimeType":"image/png",
-			"name":"Image_2.003",
-			"uri":"textures/Image_2_003.png"
-		},
-		{
-			"mimeType":"image/jpeg",
 			"name":"Image_0",
 			"uri":"textures/Image_0.jpg"
 		},
@@ -230,9 +200,39 @@
 			"uri":"textures/Image_1.jpg"
 		},
 		{
+			"mimeType":"image/jpeg",
+			"name":"Image_2",
+			"uri":"textures/Image_2.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_0",
+			"uri":"textures/Image_0-1.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_1",
+			"uri":"textures/Image_1-1.jpg"
+		},
+		{
 			"mimeType":"image/png",
 			"name":"Image_2",
 			"uri":"textures/Image_2.png"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_0",
+			"uri":"textures/Image_0-2.jpg"
+		},
+		{
+			"mimeType":"image/jpeg",
+			"name":"Image_1",
+			"uri":"textures/Image_1-2.jpg"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"Image_2",
+			"uri":"textures/Image_2-1.png"
 		}
 	],
 	"accessors":[
@@ -307,7 +307,7 @@
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":36326,
+			"count":76364,
 			"max":[
 				0.09047568589448929,
 				0.13584883511066437,
@@ -315,27 +315,27 @@
 			],
 			"min":[
 				-0.08090568333864212,
-				0.003405214985832572,
-				-0.04848574474453926
+				0.001759648323059082,
+				-0.05858942121267319
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":36326,
+			"count":76364,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":36326,
+			"count":76364,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":11,
-			"componentType":5123,
-			"count":54312,
+			"componentType":5125,
+			"count":76368,
 			"type":"SCALAR"
 		},
 		{
@@ -424,50 +424,50 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":435912,
+			"byteLength":916368,
 			"byteOffset":110008,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":435912,
-			"byteOffset":545920,
+			"byteLength":916368,
+			"byteOffset":1026376,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":290608,
-			"byteOffset":981832,
+			"byteLength":610912,
+			"byteOffset":1942744,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":108624,
-			"byteOffset":1272440,
+			"byteLength":305472,
+			"byteOffset":2553656,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":432,
-			"byteOffset":1381064,
+			"byteOffset":2859128,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":432,
-			"byteOffset":1381496,
+			"byteOffset":2859560,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":288,
-			"byteOffset":1381928,
+			"byteOffset":2859992,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":204,
-			"byteOffset":1382216,
+			"byteOffset":2860280,
 			"target":34963
 		}
 	],
@@ -479,7 +479,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1382420,
+			"byteLength":2860484,
 			"uri":"rykard.bin"
 		}
 	]

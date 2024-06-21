@@ -127,7 +127,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":39795,
+			"count":46380,
 			"max":[
 				0.04007145017385483,
 				0.11019224673509598,
@@ -136,26 +136,26 @@
 			"min":[
 				-0.06238224357366562,
 				0.004343713168054819,
-				-0.050797753036022186
+				-0.05131854861974716
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":39795,
+			"count":46380,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":39795,
+			"count":46380,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":62265,
+			"count":73536,
 			"type":"SCALAR"
 		},
 		{
@@ -196,50 +196,50 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":477540,
+			"byteLength":556560,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":477540,
-			"byteOffset":477540,
+			"byteLength":556560,
+			"byteOffset":556560,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":318360,
-			"byteOffset":955080,
+			"byteLength":371040,
+			"byteOffset":1113120,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":124530,
-			"byteOffset":1273440,
+			"byteLength":147072,
+			"byteOffset":1484160,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":432,
-			"byteOffset":1397972,
+			"byteOffset":1631232,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":432,
-			"byteOffset":1398404,
+			"byteOffset":1631664,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":288,
-			"byteOffset":1398836,
+			"byteOffset":1632096,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":204,
-			"byteOffset":1399124,
+			"byteOffset":1632384,
 			"target":34963
 		}
 	],
@@ -251,7 +251,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1399328,
+			"byteLength":1632588,
 			"uri":"pika.bin"
 		}
 	]
