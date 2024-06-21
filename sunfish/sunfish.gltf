@@ -102,7 +102,7 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":23892,
+			"count":16544,
 			"max":[
 				0.05850180238485336,
 				0.33099475502967834,
@@ -111,52 +111,52 @@
 			"min":[
 				-0.06550733000040054,
 				0.15420617163181305,
-				-0.05957001447677612
+				-0.05657147988677025
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":23892,
+			"count":16544,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":23892,
+			"count":16544,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":23898,
+			"count":16554,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":286704,
+			"byteLength":198528,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":286704,
-			"byteOffset":286704,
+			"byteLength":198528,
+			"byteOffset":198528,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":191136,
-			"byteOffset":573408,
+			"byteLength":132352,
+			"byteOffset":397056,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":47796,
-			"byteOffset":764544,
+			"byteLength":33108,
+			"byteOffset":529408,
 			"target":34963
 		}
 	],
@@ -168,7 +168,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":812340,
+			"byteLength":562516,
 			"uri":"sunfish.bin"
 		}
 	]
