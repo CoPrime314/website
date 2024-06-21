@@ -1,14 +1,19 @@
 import * as THREE from 'three';
 import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 
+
+// 1: pika,  2: rykard,  3: sunfish,  4: earwig
+
 // Set up scene, camera, and renderer
 let global_height = window.innerHeight*0.66;
 var scene = new THREE.Scene();
 var scene2 = new THREE.Scene();
 var scene3 = new THREE.Scene();
+var scene4 = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(10, window.innerWidth / global_height, 0.1, 1000);
 var camera2 = new THREE.PerspectiveCamera(10, window.innerWidth / global_height, 0.1, 1000);
 var camera3 = new THREE.PerspectiveCamera(10, window.innerWidth / global_height, 0.1, 1000);
+var camera4 = new THREE.PerspectiveCamera(10, window.innerWidth / global_height, 0.1, 1000);
 
 // Set camera position
 camera.position.z = 0.7;
@@ -23,24 +28,32 @@ camera3.position.z = 0.9;
 camera3.position.x = 0.01;
 camera3.position.y = 0.34; //updown
 camera3.rotation.x = -0.25;
+camera4.position.z = 1.1;
+camera4.position.x = -0.01; //left right
+camera4.position.y = 0.64; //updown
+camera4.rotation.x = -0.50;
 
 
 var renderer = new THREE.WebGLRenderer({antialias:true,});
 var renderer2 = new THREE.WebGLRenderer({antialias:true,}); //dupe
 var renderer3 = new THREE.WebGLRenderer({antialias:true,}); //dupe
+var renderer4 = new THREE.WebGLRenderer({antialias:true,}); //dupe
 
 // Set renderer size to match the div
 var container = document.getElementById('threescene');
 var container2 = document.getElementById('threescene2'); //dupe
 var container3 = document.getElementById('threescene3'); //dupe
+var container4 = document.getElementById('threescene4'); //dupe
 renderer.setSize(window.innerWidth/2, window.innerHeight/3 );
 renderer2.setSize(window.innerWidth/2, window.innerHeight/3 ); //dupe
 renderer3.setSize(window.innerWidth/2, window.innerHeight/3 ); //dupe
+renderer4.setSize(window.innerWidth/2, window.innerHeight/3 ); //dupe
 
 // Append renderer to the div
 container.appendChild(renderer.domElement); 
 container2.appendChild(renderer2.domElement); //dupe
 container3.appendChild(renderer3.domElement); //dupe
+container4.appendChild(renderer4.domElement); //dupe
 
 
 //OBJECTS
@@ -64,6 +77,13 @@ let sunfish;
 loader.load('/sunfish/sunfish.gltf', (gltfScene)=>{
   sunfish = gltfScene.scene;
   scene3.add(gltfScene.scene);
+  animate();
+
+})
+let earwig;
+loader.load('/earwig/earwig.gltf', (gltfScene)=>{
+  earwig = gltfScene.scene;
+  scene4.add(gltfScene.scene);
   onModelALoaded();
   animate();
 
@@ -94,7 +114,9 @@ const amlight3 = new THREE.AmbientLight();
 amlight3.intensity = 3;
 scene3.add(amlight3);
 
-
+const amlight4 = new THREE.AmbientLight();
+amlight4.intensity = 3;
+scene4.add(amlight4);
 //resize
 window.addEventListener( 'resize', onWindowResize );
 function onWindowResize() {
@@ -102,13 +124,16 @@ function onWindowResize() {
   camera.aspect = window.innerWidth / global_height;
   camera2.aspect = window.innerWidth / global_height;
   camera3.aspect = window.innerWidth / global_height;
+  camera4.aspect = window.innerWidth / global_height;
   camera.updateProjectionMatrix();
   camera2.updateProjectionMatrix();
   camera3.updateProjectionMatrix();
+  camera4.updateProjectionMatrix();
 
   renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
   renderer2.setSize( window.innerWidth/2, window.innerHeight/2 ); //dupe
   renderer3.setSize( window.innerWidth/2, window.innerHeight/2 ); //dupe
+  renderer4.setSize( window.innerWidth/2, window.innerHeight/2 ); //dupe
 
 }
 
@@ -118,6 +143,7 @@ function moveCam(){
   pika.rotation.y=t*0.001;
   rykard.rotation.y=t*0.001+1.8;
   sunfish.rotation.y=t*0.001+0.3;
+  earwig.rotation.y=t*0.001+0.3;
   
 }
 document.body.onscroll = moveCam
@@ -128,6 +154,7 @@ function animate() {
     renderer.render(scene, camera);
     renderer2.render(scene2, camera2); //dupe
     renderer3.render(scene3, camera3); //dupe
+    renderer4.render(scene4, camera4); //dupe
     
 };
 
