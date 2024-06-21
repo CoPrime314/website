@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 body {
   margin: 0;
-  background-image: url('images/animations.gif');
+  background-image: url('images/artworks.gif');
   background-color: black;
   size: 1vh;
   background-attachment: fixed;
@@ -12,7 +12,7 @@ body {
   }
 .bodyphone {
   margin: 0;
-  background-image: url('images/animations.gif');
+  background-image: url('images/artworks.gif');
   background-color: black;
   size: 1vh;
   background-attachment: fixed;
@@ -24,6 +24,7 @@ body {
   margin: 0%;
 }
 #three_container {
+  display: block;
   width: 50vw;
   height: 30vh;
   top: 0;

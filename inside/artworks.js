@@ -103,19 +103,19 @@ function onModelALoaded() {
 
 // add light
 const amlight1 = new THREE.AmbientLight();
-amlight1.intensity = 3;
+amlight1.intensity = 2;
 scene.add(amlight1);
 
 const amlight2 = new THREE.AmbientLight();
-amlight2.intensity = 3;
+amlight2.intensity = 2;
 scene2.add(amlight2);
 
 const amlight3 = new THREE.AmbientLight();
-amlight3.intensity = 3;
+amlight3.intensity = 2;
 scene3.add(amlight3);
 
 const amlight4 = new THREE.AmbientLight();
-amlight4.intensity = 3;
+amlight4.intensity = 2;
 scene4.add(amlight4);
 //resize
 window.addEventListener( 'resize', onWindowResize );
@@ -138,12 +138,12 @@ function onWindowResize() {
 }
 
 function moveCam(){
-
-  const t = document.body.getBoundingClientRect().top;
-  pika.rotation.y=t*0.001;
-  rykard.rotation.y=t*0.001+1.8;
-  sunfish.rotation.y=t*0.001+0.3;
-  earwig.rotation.y=t*0.001+0.3;
+  const element = document.getElementById("body");
+  const t = element.getBoundingClientRect().top;
+  pika.rotation.y=t*0.0005;
+  rykard.rotation.y=t*0.0005+1.3;
+  sunfish.rotation.y=t*0.0005+0.3;
+  earwig.rotation.y=t*0.0005+0.1;
   
 }
 document.body.onscroll = moveCam
