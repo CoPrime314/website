@@ -30,7 +30,7 @@ camera3.position.y = 0.34; //updown
 camera3.rotation.x = -0.25;
 camera4.position.z = 1.1;
 camera4.position.x = -0.01; //left right
-camera4.position.y = 0.64; //updown
+camera4.position.y = 0.62; //updown
 camera4.rotation.x = -0.50;
 
 

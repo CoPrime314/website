@@ -307,7 +307,7 @@
 		{
 			"bufferView":8,
 			"componentType":5126,
-			"count":76364,
+			"count":36326,
 			"max":[
 				0.09047568589448929,
 				0.13584883511066437,
@@ -315,27 +315,27 @@
 			],
 			"min":[
 				-0.08090568333864212,
-				0.001759648323059082,
-				-0.05858942121267319
+				0.003405214985832572,
+				-0.04848574474453926
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":9,
 			"componentType":5126,
-			"count":76364,
+			"count":36326,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":10,
 			"componentType":5126,
-			"count":76364,
+			"count":36326,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":11,
-			"componentType":5125,
-			"count":76368,
+			"componentType":5123,
+			"count":54312,
 			"type":"SCALAR"
 		},
 		{
@@ -424,50 +424,50 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":916368,
+			"byteLength":435912,
 			"byteOffset":110008,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":916368,
-			"byteOffset":1026376,
+			"byteLength":435912,
+			"byteOffset":545920,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":610912,
-			"byteOffset":1942744,
+			"byteLength":290608,
+			"byteOffset":981832,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":305472,
-			"byteOffset":2553656,
+			"byteLength":108624,
+			"byteOffset":1272440,
 			"target":34963
 		},
 		{
 			"buffer":0,
 			"byteLength":432,
-			"byteOffset":2859128,
+			"byteOffset":1381064,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":432,
-			"byteOffset":2859560,
+			"byteOffset":1381496,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":288,
-			"byteOffset":2859992,
+			"byteOffset":1381928,
 			"target":34962
 		},
 		{
 			"buffer":0,
 			"byteLength":204,
-			"byteOffset":2860280,
+			"byteOffset":1382216,
 			"target":34963
 		}
 	],
@@ -479,7 +479,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":2860484,
+			"byteLength":1382420,
 			"uri":"rykard.bin"
 		}
 	]
