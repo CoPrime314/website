@@ -45,43 +45,41 @@
       <img class="block_asset" style="display: block;margin: 0;padding: 0;" src="images/block-asset1.png" alt="">   
       <img class="block_asset" style="display: block;margin: 0;padding: 0;" src="images/origami.gif" alt="">
       <!-- ITEMS -->
-          <div id="items">
-            <div id="three_container">
-              <div id="threescene">
-                <p id="overlay_text">Pika</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 30px;">40x40cm uncut square paper</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</p>
-              </div>
-              <img id="crease" src="images/pika.png">
-            </div> 
-            <div id="three_container">
-              <div id="threescene3">
-                <p id="overlay_text">Sunfish</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 30px;">30x30cm uncut square paper</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</p>
-              </div>
-              <img id="crease" src="images/sunfish.png">
-            </div> 
+      <div id="items">
+        <div id="flexa">
+          <div class="image-container">
+            <img class="render" src="images/pika.gif">
+            <div class="overlay_text">Pika</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">40x40cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
           </div>
-          <div id="items">
-            <div id="three_container">
-              <div id="threescene2">
-                <p id="overlay_text">Rykard, Lord of Blasphemy</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 30px;">100x100cm uncut square paper</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</p>
-              </div>
-              <img id="crease" src="images/blank.png"></img>
-            </div> 
-            <div id="three_container">
-              <div id="threescene4">
-                <p id="overlay_text">Earwig</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 30px;">40x40cm uncut square paper</p>
-                <p id="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</p>
-              </div>
-              <img id="crease" src="images/earwig.png">
-            </div> 
+          <img id="crease" src="images/pika.png">
+          <div class="image-container">
+            <img class="render" src="images/rykard.gif">
+            <div class="overlay_text">Rykard, Lord of Blasphemy</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">100x100cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
           </div>
-          <img class="block_asset" style="display: block;margin: 0;padding: 0;" src="images/illustrations.gif" alt="">
+          <img id="crease" src="images/blank.png">
+        </div> 
+        <div id="flexa">
+          <div class="image-container">
+            <img class="render" src="images/sunfish.gif">
+            <div class="overlay_text">Sunfish</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">30x30cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
+          </div>
+          <img id="crease" src="images/sunfish.png">
+          <div class="image-container">
+            <img class="render" src="images/earwig.gif">
+            <div class="overlay_text">Earwig</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">40x40cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
+          </div>
+          <img id="crease" src="images/earwig.png">
+        </div> 
+      </div>
+      <img class="block_asset" style="display: block; margin: 0;padding: 0;" src="images/illustrations.gif" alt="">
           
     <!-- Loading screen-->
     <div class="loader-wrapper">
@@ -90,6 +88,7 @@
     <script>
         $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
+          document.body.style.overflow = 'visible';
         });
     </script>
 

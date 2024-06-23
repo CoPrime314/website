@@ -19,43 +19,45 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* origami flexboxes*/
+
 #items {
-  display : inline-flex;
+  display : flex;
+  flex-direction: row; 
+  align-items: center;
   margin: 0%;
 }
-#three_container {
-  display: block;
+#flexa {
+  display : flex;
+  flex-direction: column; 
   width: 50vw;
-  height: 30vh;
+  height: auto;
   top: 0;
   left: 0;
 }
-#crease {
+.image-container {
+  position: relative;
   width: 50vw;
-  height: 50vw;
-  justify-items: end;
+  margin: 0%;
 }
-#blank_overlay {
-  position: absolute;
-  font-weight: normal;
-  margin-top: 24%;
-  margin-left: 10%;
-  font-size: 30px;
-  font-style: normal;
-  font-family: 'Reenie Beanie', cursive;
-  color: rgb(255, 255, 255);
-  white-space: pre-wrap;
+.render, .crease {
+  width: 100%;
+  height: auto;
 }
-#overlay_text{
-  margin-top: 0%;
+
+.overlay_text{
   position: absolute;
+  top: 0%;
+  left: 1%;
   font-weight: normal;
   font-size: 30px;
   font-style: normal;
   font-family: 'Reenie Beanie', cursive;
-  color: aliceblue;
-  white-space: pre-wrap;
+  color: white;
+  text-align: center;
 }
+
 /* Flex box nonsense */
 .main_container {
   display: flex;
