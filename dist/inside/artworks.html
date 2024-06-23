@@ -9,9 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" href="/assets/icon-062d947d.ico"/>
     
-      <script type="module" crossorigin src="/assets/artworks-31b4a56e.js"></script>
+      <script type="module" crossorigin src="/assets/artworks-8502c940.js"></script>
       <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
-      <link rel="stylesheet" href="/assets/artworks-4617ae91.css">
+      <link rel="stylesheet" href="/assets/artworks-6fe77563.css">
     </head>
     <body id="body">
       <!--cursor-->
@@ -50,15 +50,35 @@
       <!-- ITEMS -->
       <div id="items">
         <div id="flexa">
-          <img id="render" src="/assets/pika-cddf543f.gif">
+          <div class="image-container">
+            <img class="render" src="/assets/pika-cddf543f.gif">
+            <div class="overlay_text">Pika</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">40x40cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
+          </div>
           <img id="crease" src="/assets/pika-0d215b55.png">
-          <img id="render" src="/assets/rykard-6792a444.gif">
+          <div class="image-container">
+            <img class="render" src="/assets/rykard-6792a444.gif">
+            <div class="overlay_text">Rykard, Lord of Blasphemy</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">100x100cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
+          </div>
           <img id="crease" src="/assets/blank-aa2d0704.png">
         </div> 
         <div id="flexa">
-          <img id="render" src="/assets/sunfish-e252ebfb.gif">
+          <div class="image-container">
+            <img class="render" src="/assets/sunfish-e252ebfb.gif">
+            <div class="overlay_text">Sunfish</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">30x30cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
+          </div>
           <img id="crease" src="/assets/sunfish-afb21d4a.png">
-          <img id="render" src="/assets/earwig-75da79ed.gif">
+          <div class="image-container">
+            <img class="render" src="/assets/earwig-75da79ed.gif">
+            <div class="overlay_text">Earwig</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;">40x40cm uncut square paper</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;">Designed and folded by me</div>
+          </div>
           <img id="crease" src="/assets/earwig-98569803.png">
         </div> 
       </div>
@@ -71,6 +91,7 @@
     <script>
         $(window).on("load",function(){
           $(".loader-wrapper").fadeOut("slow");
+          document.body.style.overflow = 'visible';
         });
     </script>
 
