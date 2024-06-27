@@ -1,10 +1,4 @@
 
-
-/*
-      END OF THREEJS CODE
-*/
-//image zooming
-
 //parallaxing with cursor
 const bodymouse = document.querySelector('body');
 function handleMouseMove(event) {
@@ -23,6 +17,9 @@ if (typeof window.orientation == 'undefined'){
   bodymouse.addEventListener('mousemove', handleMouseMove);
 }else{
   document.body.classList.add('bodyphone');
+  document.querySelectorAll('.overlay_text').forEach(element => {
+        element.style.fontSize = "16px";
+      });
 }
   
 
