@@ -18,7 +18,7 @@ if (typeof window.orientation == 'undefined'){
 }else{
   document.body.classList.add('bodyphone');
   document.querySelectorAll('.overlay_text').forEach(element => {
-        element.style.fontSize = "16px";
+        element.style.fontSize = "0px";
       });
 }
   
