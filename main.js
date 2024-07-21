@@ -44,6 +44,7 @@ composer.addPass(new UnrealBloomPass({x:1024, y:1024}, 0.5, 0.0, 0.35))
 //cabin load 
 let doorModel;
 let loader_no = 0;
+let modelsLoaded = false;
 var loader = new GLTFLoader();
 
 loader.load('/cabin/cabin.gltf', function (gltf) {
@@ -75,6 +76,7 @@ function onModelALoaded() {
   document.getElementById('blocker').style.display = 'flex';
   document.getElementById('instructions').style.display = 'flex';
   console.log('cabin loaded');
+  modelsLoaded = true;
 }
 
 
@@ -170,6 +172,7 @@ function onWindowResize() {
 var footstep = document.getElementById("footsteps");
 footstep.volume = 0.6;
 function moveCam() {
+    if (!modelsLoaded) return; //loadcheck
     const targetX = Math.min(camera.position.x + 4, -4.5); //move 1 unit until x=-4
     new TWEEN.Tween(camera.position)
     .to({ x: targetX }, 2000) // 1000 ms = 1 sec
@@ -187,6 +190,7 @@ function moveCam() {
     .start();
 }
 //background click to movecam
+
 document.getElementById('background').onclick = moveCam;
 
 //movedoor
