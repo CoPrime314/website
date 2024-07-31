@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   background-image: url('images/coding.gif');
@@ -52,13 +60,14 @@ body {
   border-radius: 10px;
   position:relative;
   background-color:black;
-  background-image: url("images/venture.png");
-  background-size: cover;
+  background-image: url("images/venture.gif");
+  background-size: contain;
   height: 70px;
+  width: 200px;
   transition: transform 0.9s;
 }
 .button2:hover{
-  background-image: url("images/venture2.png");
+  background-image: url("images/venture2.gif");
   transform: translateY(-7px);
 }
 .container2{
