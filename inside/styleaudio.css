@@ -153,11 +153,15 @@ iframe {
 #volume::-webkit-slider-thumb {
   appearance: none;
   appearance: none;
-  width: 1.5vw;
-  height: 1.5vw;
-  background: #3b3c41;
+  width: 2vw;
+  height: 3vw;
+  background-image: url('images/slider.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background: #3b3c41; */
   cursor: pointer;
-  border-radius: 20%;
+  /* border-radius: 20%;
+} */
 }
 
 #volume::-moz-range-thumb {
