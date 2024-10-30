@@ -139,7 +139,7 @@ iframe {
 }
 
 #volume {
-  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 1vw;
   background: #ddd;
@@ -151,7 +151,7 @@ iframe {
 }
 
 #volume::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
   width: 1.5vw;
   height: 1.5vw;
@@ -161,7 +161,7 @@ iframe {
 }
 
 #volume::-moz-range-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 1vw;
   background: #ddd;
