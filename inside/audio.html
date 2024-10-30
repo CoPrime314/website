@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coperime's Audio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coperime Guy is an animator and programmer. Welcome to Coperime's cabin. Enter at your discretion!">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" href="/assets/icon-062d947d.ico"/>
+    
+      <script type="module" crossorigin src="/assets/audio-2d48115f.js"></script>
+      <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
+      <link rel="stylesheet" href="/assets/audio-1cd148ee.css">
+    </head>
+    <!--cursor-->
+    <div class="cursor" id="curs">
+      <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove',e => {
+          cursor.setAttribute("style","top: " + (e.pageY-40)+"px; left: "+(e.pageX-45)+"px;")
+        })
+      </script>
+    </div>
+    <audio id="mix">
+      <source src="/assets/mix-9a5453a0.mp3" type="audio/mp3">
+      Your browser does not support this audio.
+    </audio>
+
+    <body id="body">
+      <!-- Main containers for sections of the site-->
+      <div class="main_container">
+        <div class = "box container1">
+          <a href="main.html" class="link1">
+              <div class="button1"></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Some text right here -->
+      <section style="height: 40vh;">
+        <p>Play Radio </p> 
+      </section>
+      <section style="align-items: end; height: 50vh;">
+        <img class="block_asset" id ="radio" style="position: absolute; display: block;margin: 0;padding: 0;" src="/assets/radio-00e452bd.png" alt="">  
+      </section>
+      
+    </body>
+    <!-- Loading screen-->
+    <div class="loader-wrapper">
+      <img src = "/loading.gif" alt="Loading">
+    </div>
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+        document.body.style.overflow = 'visible';
+      });
+  </script>
+
+    
+  </body>
+ 
+</html>   

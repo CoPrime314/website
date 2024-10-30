@@ -9,9 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" href="/assets/icon-062d947d.ico"/>
     
-      <script type="module" crossorigin src="/assets/coding-efae6c83.js"></script>
+      <script type="module" crossorigin src="/assets/coding-7149c67d.js"></script>
       <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
-      <link rel="stylesheet" href="/assets/coding-23ce72c0.css">
+      <link rel="stylesheet" href="/assets/coding-aa853276.css">
     </head>
     <!--cursor-->
     <div class="cursor" id="curs">
@@ -27,29 +27,56 @@
       <div class="main_container">
         <div class = "box container1">
           <a href="main.html" class="link1">
-              <div class="button1"></div>
+            <div class="button1"></div>
           </a>
+        </div>
+        <div class = "box container2"> 
+            <img class="button2" src="/assets/scroll-cdbd28af.gif" alt="">
         </div>
       </div>
 
       <!-- Some text right here -->
       <section>
-        <div class = "box container2">
-          <a href="https://coperimescabin.com" class="link1">
-            <div class="button2"></div>
-          </a>
-        </div>
+        <p>Get Software </p> 
       </section>
+      <!-- ITEMS -->
+      <img class="block_asset" style="display: block;margin: 0;padding: 0;" src="/assets/codingblock-e7ada384.png" alt="">
+      <div id="items">
+        <div id="flexa">
+          <div class="image-container">
+            <img class="desc" style="height: 40vh;" src="/assets/blank2-5b54c545.png">
+            <div class="overlay_text" >  Cope's Audio Plugins</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 30px;"></div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 50px;"> - Freeware audio plugins for your varied needs:</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 100px;"> &lt;CopeStortion&gt;  A distortion plugin made to obliterate your mix</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 170px;"> &lt;CopePhattener&gt;  A dynamic low and high end booster</div>
+            <div class="overlay_text" style="font-size: 20px; margin-top: 230px;"> - To install simply put in corresponding VST3 and component folder</div>
+            <a href="files/CopeAudioPlugins.zip" style="font-size: 20px; margin-top: 300px;" download="CopeAudioPlugins.zip" class="overlay_text">
+              DOWNLOAD
+            </a>
+          </div>
+          <!-- <img id="crease" src="images/pika.png"> -->
+        </div> 
+
+        <div id="flexa">
+          <div class="image-container">
+            <img style ="border-radius: 10px;" class="render" src="/assets/CopeAudioPreview-343416a3.png">
+          </div>
+          <!-- <img id="crease" src="images/sunfish.png"> -->
+        </div> 
+      </div>
+          
     </body>
     <!-- Loading screen-->
     <div class="loader-wrapper">
       <img src = "/loading.gif" alt="Loading">
     </div>
     <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+        document.body.style.overflow = 'visible';
+      });
+  </script>
 
     
   </body>
