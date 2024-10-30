@@ -40,3 +40,10 @@ function playaudio(){
     playpause.textContent = "Play";
   }
 };
+
+const volumeSlider = document.getElementById("volume");
+const volumeValue = document.getElementById("volumeValue");
+volumeSlider.addEventListener("input", function() {
+  const volume = volumeSlider.value / 100;
+  mix.volume = volume;
+});

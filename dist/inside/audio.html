@@ -9,9 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" href="/assets/icon-062d947d.ico"/>
     
-      <script type="module" crossorigin src="/assets/audio-2d48115f.js"></script>
+      <script type="module" crossorigin src="/assets/audio-d4363144.js"></script>
       <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
-      <link rel="stylesheet" href="/assets/audio-1cd148ee.css">
+      <link rel="stylesheet" href="/assets/audio-8b77875f.css">
     </head>
     <!--cursor-->
     <div class="cursor" id="curs">
@@ -39,10 +39,16 @@
 
       <!-- Some text right here -->
       <section style="height: 40vh;">
-        <p>Play Radio </p> 
+        <p>Radio </p> 
       </section>
-      <section style="display: flex; justify-content: center; align-items: flex-end; height: 50vh;">
-        <img class="block_asset" id ="radio" style="position: absolute; display: block;margin: 0;padding: 0;" src="/assets/radio-00e452bd.png" alt="">  
+      <section style="display: flex; justify-content: center; align-items: flex-end; height: 50vh; position: relative;">
+        <div class="img-container">
+          <img class="block_asset" id="radio" src="/assets/radio-68085ece.png" alt="Radio Image">
+          <div class="slider-container" style="bottom: 1vw;">
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+            <span id="volumeValue"></span>
+          </div>
+        </div>
       </section>
       
     </body>
