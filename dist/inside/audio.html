@@ -9,9 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" href="/assets/icon-062d947d.ico"/>
     
-      <script type="module" crossorigin src="/assets/audio-188b9b72.js"></script>
+      <script type="module" crossorigin src="/assets/audio-34bcd34e.js"></script>
       <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
-      <link rel="stylesheet" href="/assets/audio-2d2eeb00.css">
+      <link rel="stylesheet" href="/assets/audio-c7219db7.css">
     </head>
     <!--cursor-->
     <div class="cursor" id="curs">
@@ -35,10 +35,13 @@
               <div class="button1"></div>
           </a>
         </div>
+        <div class = "box container2"> 
+          <img class="button2" src="/assets/scroll-cdbd28af.gif" alt="">
+       </div>
       </div>
 
       <!-- Some text right here -->
-      <section style="height: 40vh;">
+      <section style="height: 30vh;">
         <p>Radio </p> 
       </section>
       <section style="display: flex; justify-content: center; align-items: flex-end; height: 50vh; position: relative;">
@@ -48,6 +51,16 @@
             <input type="range" id="volume" name="volume" min="0" max="100" value="50">
             <span id="volumeValue"></span>
           </div>
+        </div>
+      </section>
+      <section style="display: flex; justify-content: center; align-items: flex-end; height: 160px; background-color: black;">
+        <div class ="audioOptions" style="display:grid" id="audioOptions">
+          <button style="font-size: 33px;">Tracks:</button>
+          <button data-src="audio/mix.mp3"><u>-♫   &lt;Full Mix&gt;</u></button>
+          <button data-src="audio/redwarp.mp3"><u>-♪   Red Warp</u></button>
+          <button data-src="audio/searching.mp3"><u>-♪   Searching</u></button>
+          <button data-src="audio/dealingdevils.mp3"><u>-♪   Dealing Devils</u></button>
+          <button data-src="audio/snowstorm.mp3"><u>-❄   Snowstorm</u></button>
         </div>
       </section>
       

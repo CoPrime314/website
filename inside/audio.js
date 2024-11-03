@@ -47,3 +47,16 @@ volumeSlider.addEventListener("input", function() {
   const volume = volumeSlider.value / 100;
   mix.volume = volume;
 });
+
+// Audio switching logic
+const audioButtons = document.querySelectorAll("#audioOptions button");
+audioButtons.forEach(button => {
+  button.addEventListener("click", function() {
+    const selectedAudio = button.getAttribute("data-src");
+    if (mix.src !== selectedAudio) {
+      mix.src = selectedAudio;
+      mix.play();
+      playpause.textContent = "Pause";
+    }
+  });
+});

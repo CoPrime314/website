@@ -56,6 +56,22 @@ body {
   background-image: url("images/icons/backhovericon.gif");
   transform: translateY(-7px);
 }
+.container2{
+  top:10px;
+  left: 80%;
+  margin:auto;
+  min-width: 20vh;
+  min-height:80px;
+}
+.button2{
+  align-items: center;
+  width: 80px;
+  height: 130px;
+  border-radius: 20px;
+}
+
+
+
 
 section{
   display: grid;
@@ -171,4 +187,15 @@ iframe {
   background: #ddd;
   outline: none;
   border-radius: 5px;
+}
+
+button {
+  font-weight: normal;
+  background-color: black;
+  border:none;
+  font-size: 20px;
+  font-style: normal;
+  font-family: 'Reenie Beanie', cursive;
+  color: aliceblue;
+  cursor: pointer;
 }
