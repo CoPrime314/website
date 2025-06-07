@@ -108,6 +108,18 @@ body {
       background-image: url("images/icons/instagramhover.gif");
       transform: translateY(-7px);
     }
+    .button6{
+      background-image: url("images/icons/soundcloud.gif");
+      background-size: cover;
+      width: 100px;
+      height: 70px;
+      border-radius: 20px;
+      transition: transform 0.9s;
+    }
+    .button6:hover{
+      background-image: url("images/icons/soundcloudhover.gif");
+      transform: translateY(-7px);
+    }
 
   
     .block_asset{
