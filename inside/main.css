@@ -205,3 +205,7 @@ section{
   align-items: center;
   z-index: 3;
 }
+
+.invite_link {
+      display: none;
+    }
