@@ -12,6 +12,7 @@ export default defineConfig({
                 coding: resolve(__dirname, 'inside/coding.html'),
                 audio: resolve(__dirname, 'inside/audio.html'),
                 artworks: resolve(__dirname, 'inside/artworks.html'),
+                commissions: resolve(__dirname, 'inside/commissions.html'),
                 
             },
         },
